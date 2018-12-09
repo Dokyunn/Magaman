@@ -1,5 +1,5 @@
 const discord = require("discord.js");
-const client = new discord.Client();
+const client = new Discord.Client();
 
 client.on("ready", async () => {
   console.log(`${client.user.username} is online!`);
@@ -18,4 +18,5 @@ if(cmd === `${prefix}hello`) {
   return message.channel.send("Hello!");
 }
   
+bot.logn(process.env.BOT_TOKEN)
 
